@@ -21,6 +21,7 @@
 
 class Vehicle:
     def __init__(self, name, year):  # This function is a base class
+        
         pass
 
 
@@ -50,7 +51,7 @@ class FlightVehicle(Vehicle):
 
 
 class Airplane(FlightVehicle):
-    def __init__(self, typeOf, year, model):
+    def __init__(self,name, typeOf, year, model):
         self.name = typeOf
         super().__init__(model)
 
