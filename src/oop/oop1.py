@@ -22,3 +22,9 @@
 class Vehicle:
     def __init__(self, name, year):  # This function is a base class
         pass
+
+
+class GroundVehicle(Vehicle):  # This is a base class
+    def __init__(self, number_of_wheels, name, year):
+        self.number_of_wheels = number_of_wheels
+        super().__init__(name, year)
