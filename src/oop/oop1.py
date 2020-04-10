@@ -47,3 +47,9 @@ class FlightVehicle(Vehicle):
         self.name = name
         self.model = model
         super().__init__(year)
+
+
+class Airplane(FlightVehicle):
+    def __init__(self, typeOf, year, model):
+        self.name = typeOf
+        super().__init__(model)
