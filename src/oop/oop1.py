@@ -53,3 +53,9 @@ class Airplane(FlightVehicle):
     def __init__(self, typeOf, year, model):
         self.name = typeOf
         super().__init__(model)
+
+
+class Starship(FlightVehicle):
+    def __init__(self, size, year, model):
+        self.size = size
+        super().__init__(model)
