@@ -28,3 +28,9 @@ class GroundVehicle(Vehicle):  # This is a base class
     def __init__(self, number_of_wheels, name, year):
         self.number_of_wheels = number_of_wheels
         super().__init__(name, year)
+
+
+class Car(GroundVehicle):
+    def __init__self(self, brand, number_of_wheels, name, year):
+        self.brand = brand
+        super().__init__(number_of_wheels)
