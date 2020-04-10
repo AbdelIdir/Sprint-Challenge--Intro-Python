@@ -34,3 +34,9 @@ class Car(GroundVehicle):
     def __init__self(self, brand, number_of_wheels, name, year):
         self.brand = brand
         super().__init__(number_of_wheels)
+
+
+class Motorcycle(GroundVehicle):
+    def __init__self(self, speed, number_of_wheels, name, year):
+        self.speed = speed
+        super().__init__(number_of_wheels)
