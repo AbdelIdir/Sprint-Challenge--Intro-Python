@@ -40,3 +40,10 @@ class Motorcycle(GroundVehicle):
     def __init__self(self, speed, number_of_wheels, name, year):
         self.speed = speed
         super().__init__(number_of_wheels)
+
+
+class FlightVehicle(Vehicle):
+    def __init__(self, name, year, model):  # This is also a base function
+        self.name = name
+        self.model = model
+        super().__init__(year)
