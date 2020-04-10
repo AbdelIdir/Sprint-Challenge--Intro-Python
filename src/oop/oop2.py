@@ -12,6 +12,13 @@ class GroundVehicle():
         return sound
 
 
+class Motorcycle(GroundVehicle):
+    def __init__(self, num_wheels=2):
+        super().__init__(num_wheels)
+
+    def drive(self, sound="BRAAAP"):
+        return sound
+
 # Subclass Motorcycle from GroundVehicle.
 #
 # Make it so when you instantiate a Motorcycle, it automatically sets the number
